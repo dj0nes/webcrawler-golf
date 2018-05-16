@@ -1,26 +1,31 @@
 {
   "name": "djones2",
   "version": "1.0.0",
-  "description": "",
-  "main": "golf-min-formatted.js",
+  "description": "a foray into code golfing",
+  "main": "golf-min2.js",
   "scripts": {
     "internet1": "node golf-min.js ./i.js",
     "internet2": "node golf-min.js ./i2.js",
     "internet1_v2": "node golf-min2.js ./i.js",
     "internet2_v2": "node golf-min2.js ./i2.js",
+    "internet1_v3": "node golf-min3.js ./i.js",
+    "internet2_v3": "node golf-min3.js ./i2.js",
     "internet1_uglified": "node golf-ugly.js ./i.js",
     "internet2_uglified": "node golf-ugly.js ./i2.js",
     "internet1_uglified2": "node golf-ugly2.js ./i.js",
     "internet2_uglified2": "node golf-ugly2.js ./i2.js",
+    "internet1_uglified3": "node golf-ugly3.js ./i.js",
+    "internet2_uglified3": "node golf-ugly3.js ./i2.js",
     "uglify": "./node_modules/uglify-es/bin/uglifyjs --config-file uglify.conf.json  golf-min.js > golf-ugly.js && echo 'size of golf-ugly in bytes:' && stat -f%z golf-ugly.js",
     "uglify2": "./node_modules/uglify-es/bin/uglifyjs --config-file uglify.conf.json  golf-min2.js > golf-ugly2.js && echo 'size of golf-ugly2 in bytes:' && stat -f%z golf-ugly2.js",
+    "uglify3": "./node_modules/uglify-es/bin/uglifyjs --config-file uglify.conf.json  golf-min3.js > golf-ugly3.js && echo 'size of golf-ugly3 in bytes:' && stat -f%z golf-ugly3.js",
     "lcuglify": "./node_modules/uglify-es/bin/uglifyjs --config-file uglify.conf.json  lc.js > lc-ugly.js && echo 'size of lc-ugly in bytes:' && stat -f%z lc-ugly.js",
+    "tnuglify": "./node_modules/uglify-es/bin/uglifyjs --config-file uglify.conf.json  tn.js > tn-ugly.js && echo 'size of tn-ugly in bytes:' && stat -f%z tn-ugly.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Dillon Jones",
   "license": "ISC",
   "dependencies": {
-    "uglify-es": "^3.3.9",
-    "uglify-js": "^3.3.25"
+    "uglify-es": "^3.3.9"
   }
 }
